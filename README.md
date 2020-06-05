@@ -11,8 +11,8 @@ Screens from the app:
 - Home screen
 <img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
 
-- Clicking on a movie row will take you to a different screen with a longer movie description
-![screenshot of home screen](screenshots/Home.png)
+<img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
+Clicking on a movie row will take you to a different screen with a longer movie description
 
 References
 
