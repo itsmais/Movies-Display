@@ -9,7 +9,12 @@ Learning Outcomes:
 
 Screens from the app:
 - Home screen
-![screenshot of home screen](screenshots/Home.png)
+![screenshot of home screen](screenshots/Home.png=100x20)
 
 - Clicking on a movie row will take you to a different screen with a longer movie description
 ![screenshot of home screen](screenshots/Home.png)
+
+References
+
+Color palette:
+https://colorhunt.co/palette/181988
