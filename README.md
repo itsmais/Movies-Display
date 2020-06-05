@@ -8,3 +8,8 @@ Learning Outcomes:
 - Using Kotlin class models to represent data.
 
 Screens from the app:
+- Home screen
+![screenshot of home screen](screenshots/Home.png)
+
+- Clicking on a movie row will take you to a different screen with a longer movie description
+![screenshot of home screen](screenshots/Home.png)
