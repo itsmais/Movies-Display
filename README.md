@@ -6,6 +6,10 @@
 - Deserializing JSON response using gson.
 - Using Kotlin class models to represent data.
 
+### To do
+- Add star symbols next to the ratings.
+- Add buttons that determine the number of requested movies.
+
 ### Screens of the App
 - Home screen
 <img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
