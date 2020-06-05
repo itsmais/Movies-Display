@@ -1,5 +1,4 @@
 # Movies-Display
-Display movies from YIFY's API.
 ### Learning Outcomes
 - Implement a RecyclerView.
 - Using Intents and passing data through activities.
