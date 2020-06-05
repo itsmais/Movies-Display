@@ -10,6 +10,7 @@ Display movies from YIFY's API.
 ### Screens of the App
 - Home screen
 <img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
+
 - Clicking on a movie row will take you to a different screen with a longer movie description
 <img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
 
