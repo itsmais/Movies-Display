@@ -9,7 +9,7 @@ Learning Outcomes:
 
 Screens from the app:
 - Home screen
-![screenshot of home screen](screenshots/Home.png =100x20)
+<img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
 
 - Clicking on a movie row will take you to a different screen with a longer movie description
 ![screenshot of home screen](screenshots/Home.png)
