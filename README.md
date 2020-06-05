@@ -9,6 +9,7 @@
 ### To do
 - Add star symbols next to the ratings.
 - Add buttons that determine the number of requested movies.
+- Solve the "too much work being done on one thread" issue/warning.
 
 ### Screens of the App
 1. Home screen
