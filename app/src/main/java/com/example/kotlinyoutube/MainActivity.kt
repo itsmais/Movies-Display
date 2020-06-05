@@ -6,10 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
-import org.json.JSONArray
-import org.json.JSONObject
+
 import java.io.IOException
-import kotlin.reflect.typeOf
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     fun fetchJSON() {
         println("Attempting to fetch JSON from yify")
-        val requestURL = "https://yts.mx/api/v2/list_movies.json?sort=rating&limit=3"
+        val requestURL = "https://yts.mx/api/v2/list_movies.json?sort=rating&limit=7"
         val client = OkHttpClient()
         val request = Request.Builder().url(requestURL).build()
         client.newCall(request).enqueue(object : Callback {
@@ -46,6 +44,6 @@ class MainActivity : AppCompatActivity() {
 
     class MovieFeed(val status: String, val status_message: String, val data: Data)
     class Data(val movie_count: Int, val limit: Int, val page_number: Int, val movies: List<Movie>)
-    class Movie(val id: Int, val url: String, val title: String, val summary: String)
+    class Movie(val id: Int, val url: String, val title: String, val summary: String, val rating: Float, val medium_cover_image: String)
 
 }
