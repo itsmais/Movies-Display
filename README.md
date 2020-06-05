@@ -12,7 +12,7 @@ Display movies from YIFY's API.
 <img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
 
 - Clicking on a movie row will take you to a different screen with a longer movie description
-<img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
+<img alt="screenshot of home screen" src="screenshots/Movie_row.png" width="200">
 
 ### References and Resources
   - https://square.github.io/picasso/
