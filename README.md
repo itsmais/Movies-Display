@@ -11,10 +11,10 @@
 - Add buttons that determine the number of requested movies.
 
 ### Screens of the App
-- Home screen
+1. Home screen
 <img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
 
-- Clicking on a movie row will take you to a different screen with a longer movie description
+2. Movie screen
 <img alt="screenshot of home screen" src="screenshots/Movie_row.png" width="200">
 
 ### References and Resources
