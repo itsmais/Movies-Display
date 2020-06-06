@@ -2,9 +2,9 @@
 ### Learning Outcomes
 - Implement a RecyclerView.
 - Using Intents and passing data through activities.
-- Consuming a REST API endpoint using OkHttp
-- Deserializing JSON response using gson.
-- Using Picasso to cash/load images from URL's.
+- Consuming a [REST API endpoint using](https://yts.mx/api/v2/list_movies.json) [OkHttp](https://square.github.io/okhttp/)
+- Deserializing JSON response using [gson](https://github.com/google/gson).
+- Using [Picasso](https://square.github.io/picasso/) to cash/load images from URL's.
 - Using Kotlin class models to represent data.
 - Adding back buttons in activities.
 - Change the bar title of an activity.
