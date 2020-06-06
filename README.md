@@ -6,11 +6,13 @@
 - Deserializing JSON response using gson.
 - Using Kotlin class models to represent data.
 - Adding back buttons in activities.
+- Change the bar title of an activity.
 
 ### To do
 - Add star symbols next to the ratings.
 - Add buttons that determine the number of requested movies.
 - Solve the "too much work being done on one thread" issue/warning.
+- Fix the weird back button behavior.
 
 ### Screens of the App
 1. Home screen
