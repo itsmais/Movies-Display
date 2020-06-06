@@ -5,6 +5,7 @@
 - Consuming a REST API endpoint using OkHttp
 - Deserializing JSON response using gson.
 - Using Kotlin class models to represent data.
+- Adding back buttons in activities.
 
 ### To do
 - Add star symbols next to the ratings.
