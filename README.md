@@ -4,6 +4,7 @@
 - Using Intents and passing data through activities.
 - Consuming a REST API endpoint using OkHttp
 - Deserializing JSON response using gson.
+- Using Picasso to cash/load images from URL's.
 - Using Kotlin class models to represent data.
 - Adding back buttons in activities.
 - Change the bar title of an activity.
