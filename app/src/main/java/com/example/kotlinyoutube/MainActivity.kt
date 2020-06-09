@@ -8,6 +8,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
 
 import java.io.IOException
+import com.squareup.picasso.*
+import kotlinx.android.synthetic.main.activity_movie_summary.*
+import kotlinx.android.synthetic.main.movie_row.view.*
+import okhttp3.Callback
+import okhttp3.Request
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,14 +21,19 @@ class MainActivity : AppCompatActivity() {
 
         recyclerview_home.layoutManager = LinearLayoutManager(this)
         // recyclerview_home.adapter = MainAdapter()
-        fetchJSON()
+
+
+
+        getMoviesFromYTS()
     }
 
-    fun fetchJSON() {
+    fun getMoviesFromYTS() {
         println("Attempting to fetch JSON from yify")
         val requestURL = "https://yts.mx/api/v2/list_movies.json?sort=rating&limit=7"
         val client = OkHttpClient()
+
         val request = Request.Builder().url(requestURL).build()
+
         client.newCall(request).enqueue(object : Callback {
             override fun onResponse(call: Call, response: Response) {
                 val body = response?.body?.string()
@@ -42,9 +52,5 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    class MovieFeed(val status: String, val status_message: String, val data: Data)
-    class Data(val movie_count: Int, val limit: Int, val page_number: Int, val movies: List<Movie>)
-    class Movie(val id: Int, val url: String, val title: String, val summary: String,
-                val rating: Float, val medium_cover_image: String, val large_cover_image: String)
 
 }

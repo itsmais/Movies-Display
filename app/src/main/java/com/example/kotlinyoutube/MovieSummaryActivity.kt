@@ -1,7 +1,6 @@
 package com.example.kotlinyoutube
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_movie_summary.*
@@ -23,16 +22,27 @@ class MovieSummaryActivity : AppCompatActivity(){
 
 
         // Putting imported data into the UI
+
         // Image
+//        Picasso.get()
+//            .load(largeImageURL)
+//            .resize(400, 500)
+//            .centerCrop()
+//            .into(imageview_large_movie)
+
         Picasso.get()
             .load(largeImageURL)
-            .resize(400, 500)
+            .placeholder(R.drawable.ic_launcher_background)
             .centerCrop()
+            .resize(400, 500)
             .into(imageview_large_movie)
+
         // Title
         textview_movie_name_summary.text = movieTitle
+
         // Rating
         textview_movie_rating_summary.text = movieRating.toString()
+
         // Summary
         textview_movie_summary_long.text = movieSummary
     }

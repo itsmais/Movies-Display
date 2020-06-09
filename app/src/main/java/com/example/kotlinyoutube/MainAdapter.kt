@@ -1,18 +1,16 @@
 package com.example.kotlinyoutube
 
+
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.*
-import kotlinx.android.synthetic.main.activity_movie_summary.view.*
 import kotlinx.android.synthetic.main.movie_row.view.*
-import kotlinx.android.synthetic.main.movie_row.view.textview_movie_name
-import kotlinx.android.synthetic.main.movie_row.view.textview_movie_rating
-import kotlinx.android.synthetic.main.movie_row.view.textview_movie_summary
 
-class MainAdapter (val movieFeed: MainActivity.MovieFeed): RecyclerView.Adapter<CustomViewHolder>(){
+
+class MainAdapter (val movieFeed: MovieFeed): RecyclerView.Adapter<CustomViewHolder>(){
     // val movieTitles = listOf<String>("first movie","second movie","third movie")
     // number of items inside the RecyclerView
     override fun getItemCount(): Int{
@@ -25,7 +23,11 @@ class MainAdapter (val movieFeed: MainActivity.MovieFeed): RecyclerView.Adapter<
         // 1- create a new layout resource movie_row.xml. It's a constraintlayout that has an image view and text view
         val layoutInflater = LayoutInflater.from(parent?.context)
         val cellForRow = layoutInflater.inflate(R.layout.movie_row, parent, false)
+
+
+
         return CustomViewHolder(cellForRow)
+
     }
 
     // required method
@@ -39,10 +41,12 @@ class MainAdapter (val movieFeed: MainActivity.MovieFeed): RecyclerView.Adapter<
         // getting a medium sized image thumbnail of the movie
         val movieThumbnailImageURL = movie.medium_cover_image
         val movieThumbnail = holder?.view?.imageview_movie
+
         Picasso.get()
             .load(movieThumbnailImageURL)
-            .resize(200, 220)
+            .placeholder(R.drawable.ic_launcher_background)
             .centerCrop()
+            .resize(200, 220)
             .into(movieThumbnail)
 
         holder?.movie = movie
@@ -50,7 +54,7 @@ class MainAdapter (val movieFeed: MainActivity.MovieFeed): RecyclerView.Adapter<
 }
 
 // we need this to pass it to the MainAdapter
-class CustomViewHolder (val view: View, var movie: MainActivity.Movie? = null): RecyclerView.ViewHolder(view){
+class CustomViewHolder (val view: View, var movie: Movie? = null): RecyclerView.ViewHolder(view){
     companion object{ // key values
         val MOVIE_TITLE = "Movie Title"
         val MOVIE_ID = "123"
