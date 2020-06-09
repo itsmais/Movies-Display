@@ -22,6 +22,12 @@ Home screen                |  Movie screen
 ![](screenshots/Home.png)  |  ![](screenshots/Movie_row.png)
 
 
+<p float="left">
+  <img src="screenshots/Home.png" width="100" />
+  <img src="screenshots/Movie_row.png" width="100" /> 
+</p>
+
+
 ### References and Resources
   - Docs of used API's.
   - https://www.tutorialkart.com/kotlin-android/android-runonuithread-example-kotlin/
