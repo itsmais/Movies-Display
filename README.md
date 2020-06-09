@@ -17,6 +17,13 @@
 
 ### Screens of the App
 1. Home screen
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](screenshots/Home.png)  |  ![](screenshots/Movie_row.png)
+
+
+
 <img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
 
 2. Movie screen
