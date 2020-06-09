@@ -2,8 +2,9 @@
 ### Learning Outcomes
 - Implement a RecyclerView.
 - Using Intents and passing data through activities.
-- Consuming a REST API endpoint using OkHttp
-- Deserializing JSON response using gson.
+- Consuming a [REST API endpoint](https://yts.mx/api/v2/list_movies.json) using [OkHttp](https://square.github.io/okhttp/).
+- Deserializing JSON response using [gson](https://github.com/google/gson).
+- Using [Picasso](https://square.github.io/picasso/) to cash/load images from URL's.
 - Using Kotlin class models to represent data.
 - Adding back buttons in activities.
 - Change the bar title of an activity.
@@ -22,7 +23,8 @@
 <img alt="screenshot of home screen" src="screenshots/Movie_row.png" width="200">
 
 ### References and Resources
-  - https://square.github.io/picasso/
+  - Docs of used API's.
+  - https://www.tutorialkart.com/kotlin-android/android-runonuithread-example-kotlin/
   - https://developer.android.com/guide/topics/ui/layout/recyclerview
   - https://www.youtube.com/watch?v=53BsyxwSBJk&list=PL0dzCUj1L5JGfHj1lwxOq67zAJV3e1S9S&index=2
   - https://classroom.udacity.com/courses/ud9012
