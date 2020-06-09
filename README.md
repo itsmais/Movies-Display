@@ -24,7 +24,7 @@ Home screen                |  Movie screen
 
 <p float="left">
   <img src="screenshots/Home.png" width="300" />
-    <img src="" width="100" /> 
+    <img width="100" /> 
   <img src="screenshots/Movie_row.png" width="300" /> 
 </p>
 
