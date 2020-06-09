@@ -4,7 +4,7 @@
 - Using Intents and passing data through activities.
 - Consuming a [REST API endpoint](https://yts.mx/api/v2/list_movies.json) using [OkHttp](https://square.github.io/okhttp/).
 - Deserializing JSON response using [gson](https://github.com/google/gson).
-- Using [Picasso](https://square.github.io/picasso/) to cash/load images from URL's.
+- Using [Picasso](https://square.github.io/picasso/) to cash/load images from URL's, and add placeholders to them.
 - Using Kotlin class models to represent data.
 - Adding back buttons in activities.
 - Change the bar title of an activity.
