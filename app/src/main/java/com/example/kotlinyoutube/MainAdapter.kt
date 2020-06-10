@@ -10,11 +10,14 @@ import com.squareup.picasso.*
 import kotlinx.android.synthetic.main.movie_row.view.*
 
 
-class MainAdapter (val movieFeed: MovieFeed): RecyclerView.Adapter<CustomViewHolder>(){
+class MainAdapter (): RecyclerView.Adapter<CustomViewHolder>(){
+
+    var movies: List<Movie> = emptyList<Movie>()
+
     // val movieTitles = listOf<String>("first movie","second movie","third movie")
     // number of items inside the RecyclerView
     override fun getItemCount(): Int{
-        return movieFeed.data.movies.count()
+        return movies.count()
     }
 
     // required method
@@ -23,17 +26,13 @@ class MainAdapter (val movieFeed: MovieFeed): RecyclerView.Adapter<CustomViewHol
         // 1- create a new layout resource movie_row.xml. It's a constraintlayout that has an image view and text view
         val layoutInflater = LayoutInflater.from(parent?.context)
         val cellForRow = layoutInflater.inflate(R.layout.movie_row, parent, false)
-
-
-
         return CustomViewHolder(cellForRow)
-
     }
 
     // required method
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         // val movieTitle = movieTitles.get(position)
-        val movie = movieFeed.data.movies.get(position)
+        val movie = movies.get(position)
         holder?.view?.textview_movie_name.text = movie.title
         holder?.view?.textview_movie_summary.text = movie.summary
         holder?.view?.textview_movie_rating.text = movie.rating.toString()

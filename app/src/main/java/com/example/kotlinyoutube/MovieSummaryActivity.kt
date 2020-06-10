@@ -23,13 +23,7 @@ class MovieSummaryActivity : AppCompatActivity(){
 
         // Putting imported data into the UI
 
-        // Image
-//        Picasso.get()
-//            .load(largeImageURL)
-//            .resize(400, 500)
-//            .centerCrop()
-//            .into(imageview_large_movie)
-
+        // Image and placeholder
         Picasso.get()
             .load(largeImageURL)
             .placeholder(R.drawable.ic_launcher_background)
