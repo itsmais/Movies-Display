@@ -4,7 +4,7 @@
 - Using Intents and passing data through activities.
 - Consuming a [REST API endpoint](https://yts.mx/api/v2/list_movies.json) using [OkHttp](https://square.github.io/okhttp/).
 - Deserializing JSON response using [gson](https://github.com/google/gson).
-- Using [Picasso](https://square.github.io/picasso/) to cash/load images from URL's.
+- Using [Picasso](https://square.github.io/picasso/) to cash/load images from URL's, and add placeholders to them.
 - Using Kotlin class models to represent data.
 - Adding back buttons in activities.
 - Change the bar title of an activity.
@@ -16,16 +16,24 @@
 - Fix the weird back button behavior.
 
 ### Screens of the App
-1. Home screen
-<img alt="screenshot of home screen" src="screenshots/Home.png" width="200">
+<!-- 
+Home screen                |  Movie screen
+:-------------------------:|:-------------------------:
+![](screenshots/Home.png)  |  ![](screenshots/Movie_row.png)
+-->
 
-2. Movie screen
-<img alt="screenshot of home screen" src="screenshots/Movie_row.png" width="200">
+<p float="left">
+  <img src="screenshots/Home.png" width="300" />
+    <img width="50" /> 
+  <img src="screenshots/Movie_row.png" width="300" /> 
+</p>
+
 
 ### References and Resources
   - Docs of used API's.
   - https://www.tutorialkart.com/kotlin-android/android-runonuithread-example-kotlin/
   - https://developer.android.com/guide/topics/ui/layout/recyclerview
+  - https://hub.packtpub.com/implementing-a-home-screen-widget-and-search-bar-on-android-tutorial/
   - https://www.youtube.com/watch?v=53BsyxwSBJk&list=PL0dzCUj1L5JGfHj1lwxOq67zAJV3e1S9S&index=2
   - https://classroom.udacity.com/courses/ud9012
   - Color palette https://colorhunt.co/palette/181988
